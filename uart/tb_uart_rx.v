@@ -46,6 +46,7 @@ task tx_bit(input [7:0]data );
 				7:	rs232_tx		<=		data[6];
 				8:	rs232_tx		<=		data[7];
 				9:	rs232_tx		<=		1'b1;
+				default:rs232_tx		<=		1'b1;
 		endcase
 		#560;
 	end
